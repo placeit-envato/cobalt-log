@@ -1,16 +1,48 @@
+2015-01-21 Ben Beltran <ben@nsovocal.com>
+
+	Version 1.1.3
+
+	* lib/loggers/file.js: Makes the log work in append mode instead of
+	overwrite mode.
+
 2015-01-09 Sergio de la Garza <sergio@delagarza.io>
+
+	Version 1.1.2
+
+	* lib/cobalt.js (dependencies): Require colors fix the log output when
+	using the tocken formatter.
+
+
+2015-01-09 Ben Beltran <ben@nsovocal.com>
 
 	Version 1.1.1
 
-	* lib/cobalt.js (dependencies): require colors fix the log output when
-	using the tocken formatter.
+	* lib/loggers/file.js: Writes raw log if no formatter is present.
+
+	* lib/cobalt.js: Logging null now converts it to the string "null";
+
+	Version 1.1.0
+
+	* lib/loggers/file.js: Includes the new file logger.
+
+	* lib/formatters/simple.js (format): Simple formatter outputs date and
+	loglevel.
+
+	* lib/cobalt.js: Includes the file logger and simple formatter.
+
+	* lib/formatters/token.js: Extends with options on
+	initialization, including a new option isoDate that will make the
+	date an ISOString.
+
+	* README.md: Updates documentation to consider the new options, formatter
+	and logger.
 
 	
 2014-03-20 Ben Beltran <ben@nsovocal.com>
 
 	Version 1.0.0
 
-	* lib/cobalt.js (buildLog): logging a logObject will now use the calling
+	* lib/cobalt.js (buildLog): Logging a logObject will now use the calling
 	method's severity instead of the logObject severity. so calling `#error`
 	will always provide severity level 3.
 
