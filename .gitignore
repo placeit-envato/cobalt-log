@@ -18,4 +18,7 @@ coverage
 rdoc
 pkg
 
+## DEPENDENCY DIRECTORIES
+node_modules/
+
 ## PROJECT::SPECIFIC
