@@ -21,7 +21,6 @@
   "dependencies": {
     "colors": "1.4.0",
     "json3": "^3.3.2",
-    "microtime": "^2.1.6",
     "neon": "^2.0.0"
   },
   "devDependencies": {
