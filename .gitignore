@@ -17,5 +17,6 @@ tmtags
 coverage
 rdoc
 pkg
+node_modules/
 
 ## PROJECT::SPECIFIC
